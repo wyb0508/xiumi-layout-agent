@@ -1,0 +1,891 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-06",
+  "purpose": "语义联想与消歧辅助，不是关键词分类器；专业名只在决定性线索成立时使用。",
+  "question_policy": "问题是备用项；上下文已有答案或不影响路线时不得机械询问。",
+  "entries": [
+    {
+      "id": "L01",
+      "colloquial_examples": [
+        "点开一大段",
+        "往下拉开",
+        "抽屉拉长"
+      ],
+      "decisive_cue": "下方正文被推下去，文章高度增加",
+      "internal_term": "SVG高度展开",
+      "pattern_ids": [
+        "P07"
+      ],
+      "replacement_profiles": [
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L02",
+        "L04"
+      ],
+      "ask_only_if_unresolved": "打开时，下面的正文要跟着往下移吗？",
+      "plain_explanation": "点一下，下面会展开一段内容，后面的正文一起往下移。"
+    },
+    {
+      "id": "L02",
+      "colloquial_examples": [
+        "揭开封面",
+        "点一下露底图",
+        "盖子消失"
+      ],
+      "decisive_cue": "固定区域里覆盖物消失，不增加文章高度",
+      "internal_term": "覆盖层消失或固定视窗切页",
+      "pattern_ids": [
+        "P03",
+        "P04"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L01",
+        "L03"
+      ],
+      "ask_only_if_unresolved": "是盖在上面的图消失，还是下方再长出一段内容？",
+      "plain_explanation": "点一下揭掉封面，就能看到原来藏在下面的图。"
+    },
+    {
+      "id": "L03",
+      "colloquial_examples": [
+        "慢慢清楚",
+        "一点点显出来",
+        "从透明变实"
+      ],
+      "decisive_cue": "位置不动，透明度逐渐变化；若图片一直可见只是模糊，需改查L37，不能仅凭“清楚”判定",
+      "internal_term": "透明度渐显",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG01",
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L04",
+        "L01",
+        "L37"
+      ],
+      "ask_only_if_unresolved": "想让它原位慢慢变清楚，还是从旁边滑进来？",
+      "plain_explanation": "图片位置不动，慢慢变得清楚。"
+    },
+    {
+      "id": "L04",
+      "colloquial_examples": [
+        "从右边进来",
+        "旁边推出来",
+        "抽屉侧着打开"
+      ],
+      "decisive_cue": "明确有方向的位移，确认是在固定区域还是增加高度",
+      "internal_term": "移入或平移转场",
+      "pattern_ids": [
+        "P04"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG06"
+      ],
+      "confusable_with": [
+        "L01",
+        "L03"
+      ],
+      "ask_only_if_unresolved": "面板滑出来时，要盖在原画面上，还是把其他内容推开？",
+      "plain_explanation": "面板从右边滑进来，下面的正文保持原位。"
+    },
+    {
+      "id": "L05",
+      "colloquial_examples": [
+        "点哪张开哪张",
+        "点过的别关",
+        "各管各的"
+      ],
+      "decisive_cue": "各卡独立保留已打开状态，后操作不重置先操作",
+      "internal_term": "独立局部状态与热点",
+      "pattern_ids": [
+        "P05"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG08"
+      ],
+      "confusable_with": [
+        "L06",
+        "L07"
+      ],
+      "ask_only_if_unresolved": "开第二张时，第一张要继续留着吗？",
+      "plain_explanation": "每张卡单独打开，打开的会留着，其他卡不受影响。"
+    },
+    {
+      "id": "L06",
+      "colloquial_examples": [
+        "开新的关旧的",
+        "只留一块",
+        "同一时间一个"
+      ],
+      "decisive_cue": "选择互斥或一个公共内容区按标签换内容",
+      "internal_term": "互斥面板或标签切页",
+      "pattern_ids": [
+        "P07",
+        "P19"
+      ],
+      "replacement_profiles": [
+        "RIMG09",
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L05"
+      ],
+      "ask_only_if_unresolved": "是每块自己收起，还是所有按钮共用下面同一个显示区域？",
+      "plain_explanation": "点另一个选项时，刚才那块会收起或被新内容替换。"
+    },
+    {
+      "id": "L07",
+      "colloquial_examples": [
+        "一块接一块翻",
+        "整张图像拼图换掉",
+        "一排依次亮"
+      ],
+      "decisive_cue": "整体推进，块之间有顺序和延时，不是各块独立点击",
+      "internal_term": "分块错峰切换",
+      "pattern_ids": [
+        "P18"
+      ],
+      "replacement_profiles": [
+        "RIMG03",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L05"
+      ],
+      "ask_only_if_unresolved": "这些小块自己依次变化，还是点哪块才变哪块？",
+      "plain_explanation": "整张画面分成几块，一块接一块换成下一幅。"
+    },
+    {
+      "id": "L08",
+      "colloquial_examples": [
+        "卡片翻到背面",
+        "背后藏答案",
+        "像翻牌"
+      ],
+      "decisive_cue": "围绕轴翻面露出背面，区别平面旋转与切页",
+      "internal_term": "翻面或翻转",
+      "pattern_ids": [
+        "P04",
+        "P06"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L09",
+        "L10"
+      ],
+      "ask_only_if_unresolved": "你想翻到卡片背面，还是在正面转一个角度？",
+      "plain_explanation": "卡片翻到背面，露出藏好的内容。"
+    },
+    {
+      "id": "L09",
+      "colloquial_examples": [
+        "原地转一下",
+        "歪过去",
+        "转盘一样转"
+      ],
+      "decisive_cue": "平面旋转，需转动中心；不是背面",
+      "internal_term": "平面旋转与锚点",
+      "pattern_ids": [
+        "P04"
+      ],
+      "replacement_profiles": [
+        "RIMG06"
+      ],
+      "confusable_with": [
+        "L08"
+      ],
+      "ask_only_if_unresolved": "转完仍看到正面，还是要看到背面？",
+      "plain_explanation": "它围着一个固定点转过去，仍是原来的正面。"
+    },
+    {
+      "id": "L10",
+      "colloquial_examples": [
+        "像穿进洞里",
+        "一层层钻进去",
+        "一张张飞走"
+      ],
+      "decisive_cue": "每步有限状态推进，明确缩放或离场方向",
+      "internal_term": "分步空间转场",
+      "pattern_ids": [
+        "P04"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L08",
+        "L24"
+      ],
+      "ask_only_if_unresolved": "每点一次走一步，还是自动连续走完？",
+      "plain_explanation": "每点一下就靠近一层，像往画面深处走。"
+    },
+    {
+      "id": "L11",
+      "colloquial_examples": [
+        "照片自己换",
+        "不点也播",
+        "一会儿换一张"
+      ],
+      "decisive_cue": "无需操作按时间推进，另判是否循环",
+      "internal_term": "自动图集轮播",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG03"
+      ],
+      "confusable_with": [
+        "L12",
+        "L13"
+      ],
+      "ask_only_if_unresolved": "播到最后一张后，要回到第一张继续吗？",
+      "plain_explanation": "照片会自己一张张换，读者不用点击。"
+    },
+    {
+      "id": "L12",
+      "colloquial_examples": [
+        "点一下换一张",
+        "叠着抽走一张",
+        "别自己播"
+      ],
+      "decisive_cue": "每次点击仅推进一项，否定自动约束优先",
+      "internal_term": "点击推进图集或层叠切换",
+      "pattern_ids": [
+        "P04"
+      ],
+      "replacement_profiles": [
+        "RIMG03"
+      ],
+      "confusable_with": [
+        "L11"
+      ],
+      "ask_only_if_unresolved": "每点一次只走一张，还是点一下就连着播完？",
+      "plain_explanation": "每点一次才换一张，没点就停着。"
+    },
+    {
+      "id": "L13",
+      "colloquial_examples": [
+        "框里左右看",
+        "里面能滑",
+        "划到旁边照片"
+      ],
+      "decisive_cue": "局部内容随滚动移动，框外文章不跟着变；不是触发一次动画",
+      "internal_term": "局部滑动布局",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG04"
+      ],
+      "confusable_with": [
+        "L12",
+        "L14"
+      ],
+      "ask_only_if_unresolved": "是框里内容移动，还是整篇文章一起滚动？",
+      "plain_explanation": "手指在小框里滑动，就能看到旁边的内容。"
+    },
+    {
+      "id": "L14",
+      "colloquial_examples": [
+        "大图上下左右找",
+        "像地图逛",
+        "固定小洞看里面"
+      ],
+      "decisive_cue": "比视窗大的内容可双向移动；明确是移动图还是移动光圈",
+      "internal_term": "自由滑动与固定视窗",
+      "pattern_ids": [
+        "P02",
+        "P12"
+      ],
+      "replacement_profiles": [
+        "RIMG05",
+        "RIMG08"
+      ],
+      "confusable_with": [
+        "L16"
+      ],
+      "ask_only_if_unresolved": "是挪动大图从小洞里看，还是光圈跟着手指到处走？",
+      "plain_explanation": "外面的小窗口不动，你挪动里面的大图查看细节。"
+    },
+    {
+      "id": "L15",
+      "colloquial_examples": [
+        "框别动里面动",
+        "前后景一快一慢",
+        "从玻璃后面走"
+      ],
+      "decisive_cue": "多层有不同移动关系，固定前景不并入移动图",
+      "internal_term": "夹层滑动与视差",
+      "pattern_ids": [
+        "P02"
+      ],
+      "replacement_profiles": [
+        "RIMG05",
+        "RIMG06"
+      ],
+      "confusable_with": [
+        "L22"
+      ],
+      "ask_only_if_unresolved": "外框固定，只让里面内容动，对吗？",
+      "plain_explanation": "外面的框留在原处，里面的景物移动，前后像隔着一层。"
+    },
+    {
+      "id": "L16",
+      "colloquial_examples": [
+        "拿手电照",
+        "照到哪里亮哪里",
+        "光移走又黑"
+      ],
+      "decisive_cue": "光源位置连续控制，移走不留亮；普通淡出不能等价",
+      "internal_term": "连续位置聚光探索",
+      "pattern_ids": [
+        "P12"
+      ],
+      "replacement_profiles": [
+        "RIMG05",
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L14",
+        "L17"
+      ],
+      "ask_only_if_unresolved": "光移走以后，刚才照亮的地方还亮着吗？",
+      "plain_explanation": "光圈照到哪里，哪里就亮；移开后又暗下来。"
+    },
+    {
+      "id": "L17",
+      "colloquial_examples": [
+        "扫一下就亮",
+        "光过去别变回去",
+        "逐渐擦清楚"
+      ],
+      "decisive_cue": "边界推进后保留结果，需区分自动扫光与手指任意轨迹",
+      "internal_term": "定向显露或擦除",
+      "pattern_ids": [
+        "P03"
+      ],
+      "replacement_profiles": [
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L16",
+        "L18"
+      ],
+      "ask_only_if_unresolved": "是划一下后自动扫完，还是手指经过哪里才擦掉哪里？",
+      "plain_explanation": "光扫过去后，经过的地方会一直保持清楚。"
+    },
+    {
+      "id": "L18",
+      "colloquial_examples": [
+        "手停就停",
+        "拖到一半也能停",
+        "划到哪开到哪"
+      ],
+      "decisive_cue": "用户连续控制进度并保留中间态，不能降级成点后播完",
+      "internal_term": "连续手势与中间状态",
+      "pattern_ids": [
+        "P12",
+        "P13"
+      ],
+      "replacement_profiles": [
+        "RIMG07",
+        "RIMG08"
+      ],
+      "confusable_with": [
+        "L19"
+      ],
+      "ask_only_if_unresolved": "松手后保持当前位置，还是自动补完？",
+      "plain_explanation": "你拖多少就打开多少，手停下，画面也停下。"
+    },
+    {
+      "id": "L19",
+      "colloquial_examples": [
+        "划一下自己开",
+        "划过线就剪开",
+        "对准才弹出来"
+      ],
+      "decisive_cue": "动作达到完成条件后触发后续自动动作，判定逻辑需检查",
+      "internal_term": "手势完成触发与路径联动",
+      "pattern_ids": [
+        "P13",
+        "P20"
+      ],
+      "replacement_profiles": [
+        "RIMG08"
+      ],
+      "confusable_with": [
+        "L18"
+      ],
+      "ask_only_if_unresolved": "是沿着线一直拖到终点，还是轻划一下就开始？",
+      "plain_explanation": "完成这一步后，它会自己打开后面的内容。"
+    },
+    {
+      "id": "L20",
+      "colloquial_examples": [
+        "找齐才过关",
+        "一个一个打勾",
+        "都点完再出来"
+      ],
+      "decisive_cue": "多个独立完成状态汇总，不是任一点击就触发结果",
+      "internal_term": "多目标完成条件",
+      "pattern_ids": [
+        "P05",
+        "P20"
+      ],
+      "replacement_profiles": [
+        "RIMG08"
+      ],
+      "confusable_with": [
+        "L05"
+      ],
+      "ask_only_if_unresolved": "必须全部完成，还是找到任意一个就能继续？",
+      "plain_explanation": "找到一个记一个，全部找齐后才出现结果。"
+    },
+    {
+      "id": "L21",
+      "colloquial_examples": [
+        "火车到哪字出哪",
+        "跟着线一路读",
+        "字跟着车出现"
+      ],
+      "decisive_cue": "移动主体与章节时序联动，定时不等于实时碰撞",
+      "internal_term": "路径与正文入场联动",
+      "pattern_ids": [
+        "P01"
+      ],
+      "replacement_profiles": [
+        "RIMG06",
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L30"
+      ],
+      "ask_only_if_unresolved": "字按固定节奏出现，还是需要跟着你手动拖的位置出现？",
+      "plain_explanation": "小车走到哪一段，哪一段文字就接着出现。"
+    },
+    {
+      "id": "L22",
+      "colloquial_examples": [
+        "字比照片慢",
+        "每次都要对得上",
+        "前后不同速度"
+      ],
+      "decisive_cue": "同一内容对必须持续匹配，保证总周期和初始相位",
+      "internal_term": "同周期多层差速图集",
+      "pattern_ids": [
+        "P16"
+      ],
+      "replacement_profiles": [
+        "RIMG03",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L15",
+        "L23"
+      ],
+      "ask_only_if_unresolved": "只是文字晚一点跟上，还是希望它们各自一直按不同节奏播放？",
+      "plain_explanation": "照片先走、文字稍后跟上，但每轮仍然一一对应。"
+    },
+    {
+      "id": "L23",
+      "colloquial_examples": [
+        "人走出画框",
+        "车头伸到外面",
+        "弧形屏幕轮播"
+      ],
+      "decisive_cue": "前后遮挡加透明主体，可能需要帧配对；非自由三维",
+      "internal_term": "破框与曲面轮播",
+      "pattern_ids": [
+        "P15"
+      ],
+      "replacement_profiles": [
+        "RIMG06",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L15",
+        "L22"
+      ],
+      "ask_only_if_unresolved": "伸出框外的部分会随每张照片一起换吗？",
+      "plain_explanation": "画框里正常换照片，人物的一部分伸到了框外。"
+    },
+    {
+      "id": "L24",
+      "colloquial_examples": [
+        "像镜头拉近",
+        "一档一档放大",
+        "上下图同时对齐"
+      ],
+      "decisive_cue": "离散景别或两组配对变化，区别单张缩放与微信图片查看",
+      "internal_term": "变焦与双层配对序列",
+      "pattern_ids": [
+        "P17"
+      ],
+      "replacement_profiles": [
+        "RIMG07",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L10",
+        "L32"
+      ],
+      "ask_only_if_unresolved": "是一张图越来越大，还是切换几张从远到近拍的照片？",
+      "plain_explanation": "每往前一步就看得更近，两边内容始终对得上。"
+    },
+    {
+      "id": "L25",
+      "colloquial_examples": [
+        "先选A再选C",
+        "不同答案不同结果",
+        "答错重来"
+      ],
+      "decisive_cue": "有限分支路由，不凭此推断计分与记录",
+      "internal_term": "分支转场与结果页",
+      "pattern_ids": [
+        "P06"
+      ],
+      "replacement_profiles": [
+        "RIMG09"
+      ],
+      "confusable_with": [
+        "L29"
+      ],
+      "ask_only_if_unresolved": "只显示对应结果，还是还需要累计分数并保存记录？",
+      "plain_explanation": "每次选一个答案，下一步和最后结果都会跟着选择变化。"
+    },
+    {
+      "id": "L26",
+      "colloquial_examples": [
+        "上中下各换各的",
+        "自己搭一辆车",
+        "拼我的壁纸"
+      ],
+      "decisive_cue": "多个独立选项组合，显示与导出分开",
+      "internal_term": "多轴独立选择与DIY",
+      "pattern_ids": [
+        "P10"
+      ],
+      "replacement_profiles": [
+        "RIMG06",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L20"
+      ],
+      "ask_only_if_unresolved": "只在页面里看组合，还是要把当前组合存成一张图？",
+      "plain_explanation": "几排各自选择，最后在画面里拼成你想要的样子。"
+    },
+    {
+      "id": "L27",
+      "colloquial_examples": [
+        "年份往回翻",
+        "像档案袋找",
+        "报纸每条能点"
+      ],
+      "decisive_cue": "索引组织加局部展开或进入详情",
+      "internal_term": "时间轴与档案导航",
+      "pattern_ids": [
+        "P08",
+        "P19"
+      ],
+      "replacement_profiles": [
+        "RIMG04",
+        "RIMG09"
+      ],
+      "confusable_with": [
+        "L33"
+      ],
+      "ask_only_if_unresolved": "点年份后在这里换内容，还是进入一个详情页？",
+      "plain_explanation": "按年份或标题找到内容，点开就能看那一段。"
+    },
+    {
+      "id": "L28",
+      "colloquial_examples": [
+        "点一下回一句",
+        "像聊天记录",
+        "朋友圈揭开"
+      ],
+      "decisive_cue": "预设文案逐步出现，除非有真实数据与服务证据",
+      "internal_term": "模拟聊天状态序列",
+      "pattern_ids": [
+        "P09"
+      ],
+      "replacement_profiles": [
+        "RIMG01",
+        "RIMG09"
+      ],
+      "confusable_with": [
+        "L25"
+      ],
+      "ask_only_if_unresolved": "回复是预先写好的，还是需要根据读者输入真的回答？",
+      "plain_explanation": "每点一下就出现下一句，像对话慢慢聊下去。"
+    },
+    {
+      "id": "L29",
+      "colloquial_examples": [
+        "点密码解锁",
+        "按顺序开门",
+        "输入正确才能进"
+      ],
+      "decisive_cue": "按钮预设顺序或任意输入需分开；不冒充鉴权",
+      "internal_term": "预设密码式路由",
+      "pattern_ids": [
+        "P14"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG09"
+      ],
+      "confusable_with": [
+        "L25"
+      ],
+      "ask_only_if_unresolved": "是按几个固定按钮，还是键盘输入任意文字？",
+      "plain_explanation": "按预设顺序点完，后面的内容就会打开。"
+    },
+    {
+      "id": "L30",
+      "colloquial_examples": [
+        "线一点点画出来",
+        "沿线亮起来",
+        "小点沿曲线跑"
+      ],
+      "decisive_cue": "线条本体生长与物体沿路径移动区别",
+      "internal_term": "描线或路径移动",
+      "pattern_ids": [
+        "P01"
+      ],
+      "replacement_profiles": [
+        "RIMG06",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L21"
+      ],
+      "ask_only_if_unresolved": "是线本身从无到有，还是一个光点沿着现成的线跑？",
+      "plain_explanation": "这条线会从起点一点点长到终点。"
+    },
+    {
+      "id": "L31",
+      "colloquial_examples": [
+        "金属变成木头",
+        "电影开场接正文",
+        "产品连续转身"
+      ],
+      "decisive_cue": "复杂画面可能内置于GIF/视频/帧素材，非单一秀米参数",
+      "internal_term": "预渲染动图或序列帧接续",
+      "pattern_ids": [
+        "P11"
+      ],
+      "replacement_profiles": [
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L24"
+      ],
+      "ask_only_if_unresolved": "这段只要自动播放，还是读者需要控制中间进度？",
+      "plain_explanation": "先播完这一小段变化，再接着显示正文。"
+    },
+    {
+      "id": "L32",
+      "colloquial_examples": [
+        "点开看大图",
+        "黑底放大看",
+        "长按存原图"
+      ],
+      "decisive_cue": "系统图片查看与自定义弹层、最终合成保存不同",
+      "internal_term": "微信原生图片查看",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG01",
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L26",
+        "L34"
+      ],
+      "ask_only_if_unresolved": "要看原来这一张图，还是把现在几层拼好的画面存成一张？",
+      "plain_explanation": "点开后看更大的原图；能否保存按实际手机行为核对。"
+    },
+    {
+      "id": "L33",
+      "colloquial_examples": [
+        "进去再回来",
+        "两栏点成整页",
+        "看完回目录"
+      ],
+      "decisive_cue": "组件内部页面返回还是整篇滚动定位需区别",
+      "internal_term": "目录详情转场与返回",
+      "pattern_ids": [
+        "P19"
+      ],
+      "replacement_profiles": [
+        "RIMG09"
+      ],
+      "confusable_with": [
+        "L27"
+      ],
+      "ask_only_if_unresolved": "回来是回到这组目录，还是回到整篇文章最上面？",
+      "plain_explanation": "点目录进入详情，看完再回到原来的入口。"
+    },
+    {
+      "id": "L34",
+      "colloquial_examples": [
+        "弹个小窗",
+        "盖在上面说句话",
+        "有关闭按钮"
+      ],
+      "decisive_cue": "自定义文字按钮浮层，不能当系统原生看图",
+      "internal_term": "自定义覆盖层或状态页",
+      "pattern_ids": [
+        "P05",
+        "P19"
+      ],
+      "replacement_profiles": [
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L32"
+      ],
+      "ask_only_if_unresolved": "窗口里是只有图片，还是还要文字和能点的按钮？",
+      "plain_explanation": "原画面上出现一个小面板，读完可以关掉。"
+    },
+    {
+      "id": "L35",
+      "colloquial_examples": [
+        "照片和字压在一起",
+        "标题骑在边上",
+        "像杂志错开"
+      ],
+      "decisive_cue": "静态层次与排版，无动作证据不添加动画",
+      "internal_term": "自由布局或重叠布局",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG01",
+        "RIMG05",
+        "RIMG06"
+      ],
+      "confusable_with": [
+        "L23"
+      ],
+      "ask_only_if_unresolved": "仅在是否需要动作不明时问：这些内容要保持静止，还是还要跟着操作变化？",
+      "plain_explanation": "照片、标题和装饰错开叠放，形成杂志一样的层次。"
+    },
+    {
+      "id": "L36",
+      "colloquial_examples": [
+        "高级一点",
+        "丝滑一点",
+        "有电影感",
+        "别太花"
+      ],
+      "decisive_cue": "风格偏好不足以确定交互；结合现有稿提出视觉建议",
+      "internal_term": "视觉风格约束，机制未定",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG01"
+      ],
+      "confusable_with": [
+        "L31",
+        "L23"
+      ],
+      "ask_only_if_unresolved": "只有需要确定动作时问：你更想改变画面风格，还是它动起来的方式？",
+      "plain_explanation": "先让画面更简洁、节奏更轻；具体动法按你已有要求决定。"
+    },
+    {
+      "id": "L37",
+      "colloquial_examples": [
+        "模糊变清晰",
+        "像对上焦了",
+        "点完看清车"
+      ],
+      "decisive_cue": "图片本来已可见但模糊，清晰度改变而非从透明到可见",
+      "internal_term": "模糊层消失或模糊/清晰配对",
+      "pattern_ids": [
+        "P03"
+      ],
+      "replacement_profiles": [
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L03",
+        "L17"
+      ],
+      "ask_only_if_unresolved": "是从看不见变成看得见，还是原来模糊的图变清楚？",
+      "plain_explanation": "照片原本是模糊的，点过以后能看清细节。"
+    },
+    {
+      "id": "L38",
+      "colloquial_examples": [
+        "按着它才动",
+        "松手退回去",
+        "按久一点走远点"
+      ],
+      "decisive_cue": "按住期间控制动作，松开暂停、回退或完成必须分清",
+      "internal_term": "长按控制与释放行为",
+      "pattern_ids": [
+        "P04",
+        "P11"
+      ],
+      "replacement_profiles": [
+        "RIMG02",
+        "RIMG10"
+      ],
+      "confusable_with": [
+        "L12",
+        "L18"
+      ],
+      "ask_only_if_unresolved": "松手后要停在原地，还是退回开始？",
+      "plain_explanation": "按住时继续动，松手后按你设定的方式停住或退回。"
+    },
+    {
+      "id": "L39",
+      "colloquial_examples": [
+        "再点一次收回",
+        "开了还能关",
+        "正文缩回去"
+      ],
+      "decisive_cue": "需要开关重复及高度回收，不是仅让内容不可见",
+      "internal_term": "重复展开与收缩",
+      "pattern_ids": [
+        "P07"
+      ],
+      "replacement_profiles": [
+        "RIMG02"
+      ],
+      "confusable_with": [
+        "L01",
+        "L06"
+      ],
+      "ask_only_if_unresolved": "收起来时，下面的正文也要回到原来的位置吗？",
+      "plain_explanation": "点一次打开，再点一次收回，下面的内容也跟着回去。"
+    },
+    {
+      "id": "L40",
+      "colloquial_examples": [
+        "看着像一张长图",
+        "接起来别有缝",
+        "车头跨过两张图"
+      ],
+      "decisive_cue": "相邻图无缝拼接与比例一致；若主体跨片还需成组换图",
+      "internal_term": "无缝拼接与配对裁切",
+      "pattern_ids": [],
+      "replacement_profiles": [
+        "RIMG01",
+        "RIMG07"
+      ],
+      "confusable_with": [
+        "L35"
+      ],
+      "ask_only_if_unresolved": "两张图拼的是同一个场景，还是只是上下贴紧？",
+      "plain_explanation": "几张图连起来看，接缝处没有白线，像一张完整大图。"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "秀米效果翻译与排版"
+  short_description: "听懂口语描述并复现公众号交互，交付秀米步骤和能自己照做的换图改字说明"
+  default_prompt: "使用 $xiumi-advanced-layout 理解我描述的画面效果，用普通话解释并给出秀米做法，完成后告诉我具体怎么换图和改字。"
+policy:
+  allow_implicit_invocation: true

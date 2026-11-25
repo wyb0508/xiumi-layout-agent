@@ -1,0 +1,1319 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06",
+  "scope": "50篇公众号文章；依据独立案例讲解及制作教程研究，不代表50篇原文或秀米实测。",
+  "inspected_roundup_records": 74,
+  "inspected_tutorial_article_records": 6,
+  "selected_count": 50,
+  "cases": [
+    {
+      "case_id": "C01",
+      "brand": "中科院之声",
+      "title": "切!开!这!块!月!饼!",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5NzIyNDI1Mw==&mid=2651912329&idx=1&sn=0b63fda78a357f22487310572f720cb4&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "划过虚线后，刀切开月饼并显露知识内容。",
+      "language_aliases": [
+        "切开",
+        "划一刀",
+        "沿线揭开"
+      ],
+      "pattern_ids": [
+        "P13"
+      ],
+      "adaptation_focus": "分离手势触发、刀的轨迹和剖面显露三个动作。",
+      "critical_distinction": "任意划动即可，还是必须沿线拖到终点？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C02",
+      "brand": "最高人民法院",
+      "title": "【天津】跟随月光，见证法院里的“圆”满时刻",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 2,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3MjEwNzYzOQ==&mid=2650895013&idx=1&sn=a31e352ee86a1add986567aa3950c0f9&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "月亮沿路径下行，并与展开阅读串联。",
+      "language_aliases": [
+        "月亮带路",
+        "沿路展开"
+      ],
+      "pattern_ids": [
+        "P01"
+      ],
+      "adaptation_focus": "用统一时间线关联移动物与章节出现，先计算各节点到达时间。",
+      "critical_distinction": "正文随路径逐段露出，还是一开始全部展开？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C03",
+      "brand": "河北日报",
+      "title": "SVG长图|月是故乡明!一起点亮河北中秋月",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 4,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA4NjUyMjMzMA==&mid=2651242122&idx=1&sn=eb37ce888a232b9980ea0f9fbd283ca6&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "三层画面下滑，构成月亮升起的空间叙事。",
+      "language_aliases": [
+        "三层下滑",
+        "月升",
+        "远近景"
+      ],
+      "pattern_ids": [
+        "P02"
+      ],
+      "adaptation_focus": "分别记录手指方向、图层位移和主体视觉方向。",
+      "critical_distinction": "背景固定还是也在移动？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C04",
+      "brand": "i排版编辑器",
+      "title": "找找找找找找找找找找找找月亮",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc2NDE0NQ==&mid=2652588168&idx=1&sn=3ca422d9f04c1930957698e8a3d551de&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "双击与找月亮连成跨文章位置的多步交互。",
+      "language_aliases": [
+        "找到再点",
+        "落下又升起",
+        "回到开头"
+      ],
+      "pattern_ids": [
+        "P20"
+      ],
+      "adaptation_focus": "先画跨区域状态图；返回文章顶部的能力需单独核实。",
+      "critical_distinction": "返回顶部是滚动跳转，还是画面中模拟返回？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C05",
+      "brand": "Dyson戴森",
+      "title": "上新 3 连，刷新清洁体验",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 7,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzAxOTI2MzI0NQ==&mid=2683083923&idx=1&sn=68368a87be249f7f64485050569ba612&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "点击后亮带向下扫过，画面由暗转亮。",
+      "language_aliases": [
+        "光扫下来",
+        "扫描点亮",
+        "暗变亮"
+      ],
+      "pattern_ids": [
+        "P03"
+      ],
+      "adaptation_focus": "前后图对齐，以方向性遮罩显露，不能只设整图透明度。",
+      "critical_distinction": "光带扫过处永久变亮，还是光移走后又暗下去？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C06",
+      "brand": "海信家电集团",
+      "title": "有多少“圆”，就有多少种“团圆”",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 8,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI5MTExMjkxNw==&mid=2649497292&idx=1&sn=e5b693d6e3b0b3eae47c743967ceef0d&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "连续点击穿过圆形画面，最终进入展开内容。",
+      "language_aliases": [
+        "穿过圆洞",
+        "推近镜头",
+        "越点越近"
+      ],
+      "pattern_ids": [
+        "P04"
+      ],
+      "adaptation_focus": "每步使用对应的圆心和缩放中心，末步再处理高度变化。",
+      "critical_distinction": "每次点击推进一层，还是一次点击播放完整段落？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C07",
+      "brand": "极氪Zeekr",
+      "title": "月亮藏好了，快来找找！",
+      "source_id": "R-S09",
+      "source_url": "https://ipaiban.com/idea/article/6ad19a2b082331dd9e0f8b9e",
+      "source_title": "2026年9月品牌SVG交互图文Top10",
+      "source_ordinal": 9,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxNjIwNTE0NQ==&mid=2247794681&idx=1&sn=267c7f96f6c336f902d72f9ac734adf0&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "多格找月亮，各格点击后显露不同内容。",
+      "language_aliases": [
+        "翻月亮",
+        "点哪格开哪格",
+        "独立翻牌"
+      ],
+      "pattern_ids": [
+        "P05"
+      ],
+      "adaptation_focus": "格子应各自管理状态；来源列数描述有冲突，不照抄几列。",
+      "critical_distinction": "已经打开的格子在点其他格子时是否保留？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C08",
+      "brand": "最高人民法院",
+      "title": "今天，和獬小豸一起探索吧！",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3MjEwNzYzOQ==&mid=2650889688&idx=1&sn=af27c3eb6e7361e5841c1ada61b93a30&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "并列题卡点击后以翻转方式显示答案。",
+      "language_aliases": [
+        "翻面答题",
+        "题卡",
+        "背面答案"
+      ],
+      "pattern_ids": [
+        "P06"
+      ],
+      "adaptation_focus": "先区分独立题卡和连续问卷；翻转是视觉层，答案是状态层。",
+      "critical_distinction": "需要累计得分，还是每题只展示解释？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C09",
+      "brand": "海尔新能源",
+      "title": "AI协同、人机共创，您的专属AI电力交易员已就位！",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 2,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTg5NTc1MQ==&mid=2247487990&idx=1&sn=92de085de0f070323bf4136c822cba85&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "不同入口对应可展开、可收回的选项内容。",
+      "language_aliases": [
+        "二选一展开",
+        "弹性抽屉",
+        "可收起"
+      ],
+      "pattern_ids": [
+        "P07"
+      ],
+      "adaptation_focus": "明确多个面板能否同时开启，分支与展开组合要另验。",
+      "critical_distinction": "展开第二项时，第一项是否自动收回？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C10",
+      "brand": "医科达",
+      "title": "China-hospeq 2026｜自适应战略引领，医科达擘画放疗新未来",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 3,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA4NTg0ODkwOA==&mid=2651206909&idx=1&sn=5a4e0b39e6a9eb45099474afad1df342&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "展开后出现线条及沿线移动的光点。",
+      "language_aliases": [
+        "光点沿线",
+        "路径引导",
+        "展开后亮线"
+      ],
+      "pattern_ids": [
+        "P01"
+      ],
+      "adaptation_focus": "移动光点与逐段画线是两种动作，需要分别配置。",
+      "critical_distinction": "整条线先出现，还是随着光点逐段画出？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C11",
+      "brand": "字节范儿",
+      "title": "关于字节跳动，建议你一定要看看这 12 个故事",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI5MzI4MzM1OQ==&mid=2247532536&idx=1&sn=92b6cd2a9a491a0103071e8d831e25c9&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "时间轴先正序展开，再以擦除动作逆序回看。",
+      "language_aliases": [
+        "年份倒带",
+        "时间轴回溯",
+        "下拉展开"
+      ],
+      "pattern_ids": [
+        "P08"
+      ],
+      "adaptation_focus": "阅读年份顺序与画面移动方向分别记录，不能共用一个“向下”。",
+      "critical_distinction": "点击后回到前一年，还是整段自动倒放？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C12",
+      "brand": "Levis官方账号",
+      "title": "点击查看时代「裤」存",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 8,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5NDY4NDA2MA==&mid=2650026791&idx=1&sn=3d95289b1b1025c3ac865b98481c0fcc&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "纵向档案中嵌入横向浏览及覆盖画框。",
+      "language_aliases": [
+        "档案柜",
+        "纵向目录横向内容",
+        "框内滑动"
+      ],
+      "pattern_ids": [
+        "P08",
+        "P02"
+      ],
+      "adaptation_focus": "外层文档与内层横滑分开；固定边框不能挡住滑动触点。",
+      "critical_distinction": "横滑的是每个档案内部，还是整个档案墙？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C13",
+      "brand": "吉利银河",
+      "title": "银河来整活 | 随心滑动，定格专属银河战舰700出游壁纸",
+      "source_id": "R-S08",
+      "source_url": "https://ipaiban.com/idea/article/6a979638082331dd9ef459f3",
+      "source_title": "2026年8月品牌SVG交互图文Top10",
+      "source_ordinal": 10,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzAwMDI3NjY2MA==&mid=2648789495&idx=1&sn=b17abebe3be03ab3fa7276a42efcb5de&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "三层横向选择组合出不同出游画面。",
+      "language_aliases": [
+        "三段拼壁纸",
+        "上下分别滑",
+        "拼场景"
+      ],
+      "pattern_ids": [
+        "P10"
+      ],
+      "adaptation_focus": "让各层独立选择并对齐接缝；保存合成图另行验证。",
+      "critical_distinction": "需要看到组合结果，还是还要生成一张可长按保存的整图？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C14",
+      "brand": "梅赛德斯-奔驰",
+      "title": "你的Chat「G」PT已配置成功",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5OTI5OTg5Mg==&mid=2650205403&idx=1&sn=55bff36deadc37a8328377e179b1f2cc&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "分阶段点击并展开，模拟聊天往返。",
+      "language_aliases": [
+        "聊天气泡",
+        "点一下回一句",
+        "模拟对话"
+      ],
+      "pattern_ids": [
+        "P09"
+      ],
+      "adaptation_focus": "用预设状态与短内容推进；不要误配成实时生成式聊天。",
+      "critical_distinction": "读者只能点预设按钮，还是需要输入任意文字？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C15",
+      "brand": "Another Man 中文版",
+      "title": "一本不太规矩的时装字典，打开 MITHRIDATE 的另一面",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 3,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzIyNTgyMTQ4NA==&mid=2247524563&idx=1&sn=6463cc21b76efc77ef472ff37d475fec&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "横向阅读后选择索引，再进入纵向内容。",
+      "language_aliases": [
+        "字典索引",
+        "横翻竖读",
+        "目录跳层"
+      ],
+      "pattern_ids": [
+        "P08",
+        "P19"
+      ],
+      "adaptation_focus": "使用目录状态与阅读状态，分别定义返回位置和滚动方向。",
+      "critical_distinction": "返回目录后，需要保留原来选中的词条位置吗？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C16",
+      "brand": "阿维塔",
+      "title": "[未读] 阿维塔 07L 发布了一条动态",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 4,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxNDI5MzQyMw==&mid=2247584616&idx=1&sn=b4845be418588deb10ce3f0d115dd795&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "上移封面后显露动态界面，继续展开及点击。",
+      "language_aliases": [
+        "朋友圈展开",
+        "向上揭开",
+        "动态卡片"
+      ],
+      "pattern_ids": [
+        "P09",
+        "P05"
+      ],
+      "adaptation_focus": "用封面揭示和热点模拟界面；视觉控件不等于真实社交功能。",
+      "critical_distinction": "点赞等按钮只需视觉反馈，还是要真实计数？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C17",
+      "brand": "CROCS卡骆驰",
+      "title": "「我乐意」我的风格，自有答案",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 6,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MTc1MTU0MA==&mid=2660124046&idx=1&sn=479579ad5d7c2a00b14df44a1fe05fbe&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "多组可重复选择组合出穿搭状态。",
+      "language_aliases": [
+        "换装",
+        "选鞋配衣服",
+        "不同风格组合"
+      ],
+      "pattern_ids": [
+        "P10"
+      ],
+      "adaptation_focus": "拆成独立选择轴；按遮挡顺序准备透明素材。",
+      "critical_distinction": "两个选项组互相独立，还是存在不允许的搭配？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C18",
+      "brand": "极氪Zeekr",
+      "title": "今日大暑！点进来创作你的专属夏日壁纸吧~",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 7,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxNjIwNTE0NQ==&mid=2247783786&idx=1&sn=4bf6924b48ced6dc2097f435cccf1955&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "像素风多行选择组成夏日壁纸。",
+      "language_aliases": [
+        "像素拼图",
+        "三排选项",
+        "专属壁纸"
+      ],
+      "pattern_ids": [
+        "P10"
+      ],
+      "adaptation_focus": "先设计组合状态与像素对齐，整体导出不可由画面效果推定。",
+      "critical_distinction": "最终是固定候选海报，还是自由组合后输出新图片？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C19",
+      "brand": "梦特娇官方男装",
+      "title": "有奖互动｜何为“传承”？梦特娇用百年时光作答",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 8,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA5NjU2OTgxNg==&mid=2650876488&idx=1&sn=a2b06c50fa4d0295df64fa4f4c02838a&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "点击后借放映机形式播放品牌历史。",
+      "language_aliases": [
+        "老电影放映",
+        "投影机",
+        "胶片历史"
+      ],
+      "pattern_ids": [
+        "P11"
+      ],
+      "adaptation_focus": "区分机器装饰、逐帧内容和光束；需要外部画面素材。",
+      "critical_distinction": "必须每点一次换一帧，还是点击后自动播放？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C20",
+      "brand": "伊刻活泉",
+      "title": "与无穷小亮一起探寻自然宝藏",
+      "source_id": "R-S07",
+      "source_url": "https://ipaiban.com/idea/article/6a7c5894082331dd9e5ea750",
+      "source_title": "2026年7月品牌SVG交互图文Top10",
+      "source_ordinal": 9,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzAxOTE0NjY1NQ==&mid=2247493899&idx=1&sn=b1c629edf3a2f3b0be7a3f4637907d4f&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "点击动图后接入多层上滑场景及视频。",
+      "language_aliases": [
+        "开场动图",
+        "进入探险",
+        "多层上滑接视频"
+      ],
+      "pattern_ids": [
+        "P11",
+        "P02"
+      ],
+      "adaptation_focus": "先验证开场结束与后续内容接续，再加入滑动和视频。",
+      "critical_distinction": "下一段依据真实播放结束触发，还是固定延时出现？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C21",
+      "brand": "国家安全部",
+      "title": "一键自测：反间防谍大考验",
+      "source_id": "R-S05",
+      "source_url": "https://ipaiban.com/idea/article/6a3bac78082331dd9ed53e1c",
+      "source_title": "《2026年5月品牌SVG交互图文Top10》（创意高级好用）",
+      "source_ordinal": 2,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTUyOTc1Ng==&mid=2247516080&idx=1&sn=22308932af033f41cc1eeac69792f454&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "多场景答题通过连续点击推进。",
+      "language_aliases": [
+        "闯关答题",
+        "场景测试",
+        "下一题"
+      ],
+      "pattern_ids": [
+        "P06"
+      ],
+      "adaptation_focus": "列出正确、错误、重试的状态边，避免只做线性换图。",
+      "critical_distinction": "不同答案是否导致不同后续题目？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C22",
+      "brand": "乐堡啤酒",
+      "title": "打工人的戛纳来了，乐堡戏精大赛即将开场!",
+      "source_id": "R-S05",
+      "source_url": "https://ipaiban.com/idea/article/6a3bac78082331dd9ed53e1c",
+      "source_title": "《2026年5月品牌SVG交互图文Top10》（创意高级好用）",
+      "source_ordinal": 4,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg2MjEyMjQ1Mg==&mid=2247562224&idx=1&sn=807006ec9ce58123f85c827dadb10d47&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "开场动图后展开，并衔接视频内容。",
+      "language_aliases": [
+        "电影开场",
+        "动图接正文",
+        "无缝视频"
+      ],
+      "pattern_ids": [
+        "P11"
+      ],
+      "adaptation_focus": "动图与视频各自检查首帧、结束和再次进入行为。",
+      "critical_distinction": "视频必须自动开始，还是允许读者再点播放？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C23",
+      "brand": "法拉利中国",
+      "title": "以光之名，驭见未来：全新法拉利Luce",
+      "source_id": "R-S05",
+      "source_url": "https://ipaiban.com/idea/article/6a3bac78082331dd9ed53e1c",
+      "source_title": "《2026年5月品牌SVG交互图文Top10》（创意高级好用）",
+      "source_ordinal": 7,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2NDAyODc1Nw==&mid=2649071366&idx=1&sn=a651dfcd3d39de51a416dac00cdac4c7&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "聚光探索与弹性展开、横滑阅读结合。",
+      "language_aliases": [
+        "探照灯找车",
+        "照亮后打开",
+        "车身探索"
+      ],
+      "pattern_ids": [
+        "P12",
+        "P07"
+      ],
+      "adaptation_focus": "随手指移动的光圈需要连续位置控制；现成动画只能近似外观。",
+      "critical_distinction": "光圈跟手，还是点击后按预设轨迹移动？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C24",
+      "brand": "阿维塔",
+      "title": "Let's travel------------->",
+      "source_id": "R-S05",
+      "source_url": "https://ipaiban.com/idea/article/6a3bac78082331dd9ed53e1c",
+      "source_title": "《2026年5月品牌SVG交互图文Top10》（创意高级好用）",
+      "source_ordinal": 10,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzkxNDI5MzQyMw==&mid=2247579851&idx=1&sn=88d9c490a9ddf3098e1edab9ce44702f&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "多层横向穿行形成旅行空间。",
+      "language_aliases": [
+        "开车穿景",
+        "横向穿梭",
+        "前后景错动"
+      ],
+      "pattern_ids": [
+        "P02"
+      ],
+      "adaptation_focus": "分别制作近景遮挡、主体、远景；来源有品牌串词，舍弃营销归因。",
+      "critical_distinction": "车体固定在视窗中，还是与背景反向位移？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C25",
+      "brand": "君乐宝简醇",
+      "title": "打工人7天“超顺”自救指南",
+      "source_id": "R-S04",
+      "source_url": "https://ipaiban.com/idea/article/6a05f7437db281f152ddad30",
+      "source_title": "《2026年4月品牌SVG交互图文Top10》（经典常用)",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzk0NDE3NzM5Ng==&mid=2247510795&idx=1&sn=9cc4b30175f2c4d3294c3cd6c7225f34&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "多次点击旋转切换，再展开并出现提示层。",
+      "language_aliases": [
+        "旋转菜单",
+        "转一下开一页",
+        "顺时针换内容"
+      ],
+      "pattern_ids": [
+        "P04"
+      ],
+      "adaptation_focus": "旋转中心、末态角度和后续展开顺序分别设定。",
+      "critical_distinction": "要平面旋转，还是绕轴翻到卡片背面？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C26",
+      "brand": "LACOSTE",
+      "title": "戳戳Codi！解锁@王一博的一天",
+      "source_id": "R-S04",
+      "source_url": "https://ipaiban.com/idea/article/6a05f7437db281f152ddad30",
+      "source_title": "《2026年4月品牌SVG交互图文Top10》（经典常用)",
+      "source_ordinal": 6,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5MDQxNzY0Mg==&mid=2651561829&idx=1&sn=76fcba3edd180d019c513eacee5dc212&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "横向长场景内含可独立点击的角色热点。",
+      "language_aliases": [
+        "逛长街",
+        "全景里点人物",
+        "边滑边点"
+      ],
+      "pattern_ids": [
+        "P05",
+        "P02"
+      ],
+      "adaptation_focus": "长图坐标与热点绑定；外层拖动不能把抬手误判成点击。",
+      "critical_distinction": "滑过再滑回来，热点状态是否要保留？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C27",
+      "brand": "最高人民检察院",
+      "title": "【SVG】最高检工作报告中的民生答卷",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA4MjQ5MzIxNQ==&mid=2651125837&idx=1&sn=99d18d777e0a0b93994179b765c2a27c&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "列车沿轨迹下行，经过处的内容从两侧进入。",
+      "language_aliases": [
+        "火车带路",
+        "经过才出现",
+        "两侧入场"
+      ],
+      "pattern_ids": [
+        "P01"
+      ],
+      "adaptation_focus": "按路径到达节点的时刻安排侧边内容，不能仅同一时间播放。",
+      "critical_distinction": "暂停或重播列车时，旁边内容也要复位吗？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C28",
+      "brand": "莲花跑车",
+      "title": "「绝色」档案",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 4,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg3ODU2NzY4NA==&mid=2247563672&idx=1&sn=5ca1e1458f9dd34df11938620acce3d8&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "展开后在固定画框中横向滑动中间内容。",
+      "language_aliases": [
+        "夹层滑动",
+        "前框不动",
+        "窗内换景"
+      ],
+      "pattern_ids": [
+        "P02"
+      ],
+      "adaptation_focus": "明确前框、可滑中层与背景；前框透明区域须真实透明。",
+      "critical_distinction": "滑动只改变中层，还是前后层都产生位移？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C29",
+      "brand": "雅诗兰黛集团",
+      "title": "与美同行，步履不停",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3MDUxNjk2Mg==&mid=2649897848&idx=1&sn=d8dba58e79e018c62bcf5c3ec6e69a7f&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "线条生长、内容展开与图像渐现相互衔接。",
+      "language_aliases": [
+        "线条写出来",
+        "边画边展开",
+        "柔和显现"
+      ],
+      "pattern_ids": [
+        "P01"
+      ],
+      "adaptation_focus": "路径移动不能替代线条逐步绘制；分离三条动画时间线。",
+      "critical_distinction": "线是被绘制出来，还是一整条线由透明变为可见？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C30",
+      "brand": "maxandco品牌服务号",
+      "title": "MAX&Co. DAILY：今日「星」动头条",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 6,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI4NDQ5MzkyMw==&mid=2247555696&idx=1&sn=583c41f09202da310383afe422e77070&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "报纸版面里的多处热点打开图片内容。",
+      "language_aliases": [
+        "可点的报纸",
+        "新闻小窗",
+        "版面热点"
+      ],
+      "pattern_ids": [
+        "P05",
+        "P08"
+      ],
+      "adaptation_focus": "版面格栅固定热点位置；图片原生放大与自定义弹层区分。",
+      "critical_distinction": "弹出的内容有自定义文字和关闭按钮吗？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C31",
+      "brand": "i排版编辑器",
+      "title": "🦞养养养养养养养养养养养养龙虾🦞",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 7,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc2NDE0NQ==&mid=2652584900&idx=1&sn=5927a157032d6706298d71959b6ba5b9&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "双击唤醒后连续点击养成，末段再滑动。",
+      "language_aliases": [
+        "养成小游戏",
+        "双击唤醒",
+        "升级飞走"
+      ],
+      "pattern_ids": [
+        "P20"
+      ],
+      "adaptation_focus": "列出唤醒、技能、升级、离场状态；不要承诺真实计算或存档。",
+      "critical_distinction": "离开文章再回来，需要保存养成进度吗？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C32",
+      "brand": "局部气候调查组",
+      "title": "爱你老己（深度版）",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 9,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzU0OTE1ODMxOA==&mid=2247571237&idx=1&sn=c994b3e9d0db9c82ad95102ec93c87d3&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "显露后以纵向视差构成人体内部的空间错觉。",
+      "language_aliases": [
+        "身体透视",
+        "向上钻进去",
+        "纵深空间"
+      ],
+      "pattern_ids": [
+        "P02"
+      ],
+      "adaptation_focus": "采用分层剖面素材与前后遮挡；不误称可自由旋转的三维模型。",
+      "critical_distinction": "只能上下阅读，还是要手指自由旋转视角？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C33",
+      "brand": "Moncler盟可睐",
+      "title": "相遇在罗马假日",
+      "source_id": "R-S03",
+      "source_url": "https://ipaiban.com/idea/article/69d485b87db281f152c39aa1",
+      "source_title": "《2026年3月品牌SVG交互图文Top10》",
+      "source_ordinal": 10,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA5ODk4NzI5OQ==&mid=2651229890&idx=1&sn=8e12db7454fec18c6eb6b869f28066e8&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "双列入口进入宽幅横滑内容，并可返回。",
+      "language_aliases": [
+        "双栏点开全宽",
+        "进入画廊",
+        "返回目录"
+      ],
+      "pattern_ids": [
+        "P19"
+      ],
+      "adaptation_focus": "目录与画廊两状态；这里的全宽不代表系统全屏。",
+      "critical_distinction": "返回时回到初始目录，还是保留画廊页码？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C34",
+      "brand": "国家安全部",
+      "title": "伟大的远征",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzk0OTUyOTc1Ng==&mid=2247520420&idx=1&sn=7cb5f5d90adaa983843a3dee17a469aa&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "路线节点分别展开，尾部可收回并重复操作。",
+      "language_aliases": [
+        "路线折叠册",
+        "点开再收回",
+        "独立章节"
+      ],
+      "pattern_ids": [
+        "P07"
+      ],
+      "adaptation_focus": "每个节点单独处理高度与状态，先测试一开一关不产生留白。",
+      "critical_distinction": "多个节点是否允许同时展开？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C35",
+      "brand": "i排版编辑器",
+      "title": "？？？？？？？？？？？？",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 2,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5Njc2NDE0NQ==&mid=2652588797&idx=1&sn=b79cb14d8ba7f8f804f6e7820ce4be9f&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "滑动使图形对齐后，继续展开阅读内容。",
+      "language_aliases": [
+        "对准轮廓才打开",
+        "拼图解锁",
+        "滑到位"
+      ],
+      "pattern_ids": [
+        "P13"
+      ],
+      "adaptation_focus": "完成条件是对齐阈值，不能以任意滑动替代判断。",
+      "critical_distinction": "必须准确拼合，还是拖动一次就算完成？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C36",
+      "brand": "海鸥表",
+      "title": "宇宙执笔",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 4,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3NDk1ODMwMQ==&mid=2651744266&idx=1&sn=f1165eda9c72b4d15e2754a04e4486a2&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "倾斜前景上滑与后景构成空间层次。",
+      "language_aliases": [
+        "斜着向上滑",
+        "斜面空间",
+        "手表纵深"
+      ],
+      "pattern_ids": [
+        "P02"
+      ],
+      "adaptation_focus": "倾斜是素材角度还是变换角度要区分；留足移动后的遮挡边界。",
+      "critical_distinction": "手势沿竖直方向，还是必须沿斜向拖动？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C37",
+      "brand": "MannerCoffee",
+      "title": "携手ZIWI滋益巅峰 | 换个视角，让世界更大",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI5NTU4Njg1MQ==&mid=2247525999&idx=1&sn=e848a6bb0462589cb673e947d9dbf849&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "低视角动图引入后，内容以卡片交叠切换。",
+      "language_aliases": [
+        "宠物视角开场",
+        "叠卡故事",
+        "交错轮播"
+      ],
+      "pattern_ids": [
+        "P11",
+        "P04"
+      ],
+      "adaptation_focus": "开场素材与轮播分开制作；卡片层级和进出方向单独核对。",
+      "critical_distinction": "卡片自动轮换，还是读者逐次点击？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C38",
+      "brand": "Jellycat",
+      "title": "Jellycat秋日丰收季开启",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 6,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzI2MTQzMTMzOA==&mid=2247524888&idx=1&sn=d86b6405b9b8780b4a5dca20a1ca3734&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "聚光探索后点击进入弹性展开内容。",
+      "language_aliases": [
+        "黑暗里找东西",
+        "移动光圈",
+        "照见再展开"
+      ],
+      "pattern_ids": [
+        "P12"
+      ],
+      "adaptation_focus": "聚光位置与命中热点是两套逻辑，需连续拖动模板或定制。",
+      "critical_distinction": "只有照到目标后才允许点击，还是目标始终可点击？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C39",
+      "brand": "联合利华中国",
+      "title": "联合利华中国研发中心30周年再启程",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 8,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA3MzMzNjYzMA==&mid=2649869059&idx=1&sn=5cf4df714e9c252abf05084e9e6ec6c8&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "预设密码式交互后展开，并带加载遮罩。",
+      "language_aliases": [
+        "密码解锁",
+        "解密入口",
+        "加载中"
+      ],
+      "pattern_ids": [
+        "P14"
+      ],
+      "adaptation_focus": "将点击序列和等待动画分开；不能据此承诺安全鉴权。",
+      "critical_distinction": "密码是固定玩法，还是要验证每个人的真实身份？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C40",
+      "brand": "CINDYCHAO艺术珠宝",
+      "title": "材质的碰撞与融合之美",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 9,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzkzOTE0MzU0NQ==&mid=2247549995&idx=1&sn=db9fdd8e4103edaf4d1ca2943a005808&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "材质序列变化与横向视差组合。",
+      "language_aliases": [
+        "木变金属",
+        "材质变身",
+        "侧向质感"
+      ],
+      "pattern_ids": [
+        "P11",
+        "P02"
+      ],
+      "adaptation_focus": "材质过渡需渲染帧或动图，SVG负责时序与容器。",
+      "critical_distinction": "材质变化随拖动进度，还是自动播放？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C41",
+      "brand": "澳柯玛家电",
+      "title": "欢迎光临我的家",
+      "source_id": "R-S10",
+      "source_url": "https://ipaiban.com/idea/article/6aec0dc3082331dd9ea6e9ae",
+      "source_title": "《2026年10月品牌SVG交互图文TOP10》（经典实用）",
+      "source_ordinal": 10,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzAxNzI0NDM3Mg==&mid=2655055425&idx=1&sn=93e64bddcaa0254e38b4ee00540ed193&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "各房门可重复点入，以缩放穿行切换场景。",
+      "language_aliases": [
+        "点门进房间",
+        "每扇门独立",
+        "穿门放大"
+      ],
+      "pattern_ids": [
+        "P05",
+        "P04"
+      ],
+      "adaptation_focus": "各门的返回和局部状态独立；缩放锚点对齐对应门洞。",
+      "critical_distinction": "退出房间后，其他房间的状态是否保持？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C42",
+      "brand": "图拉斯",
+      "title": "今天，听听她们怎么说",
+      "source_id": "R-SW",
+      "source_url": "https://ipaiban.com/idea/article/69a876a97db281f1526374c7",
+      "source_title": "《2026妇女节SVG交互图文案例合集》",
+      "source_ordinal": 1,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg3MDg3MzY1OA==&mid=2247501592&idx=1&sn=04a3d5f20cc4a073d3d0ff7f939e9411&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "点击后以线条轨迹串接人物故事。",
+      "language_aliases": [
+        "故事连线",
+        "线条带出内容",
+        "人物串联"
+      ],
+      "pattern_ids": [
+        "P01"
+      ],
+      "adaptation_focus": "明确线条是否绘制及每段显露时间，再布置人物模块。",
+      "critical_distinction": "线条跟随点击逐段走，还是一次播放整条路线？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C43",
+      "brand": "GRAFF格拉夫",
+      "title": "妳的选择是……",
+      "source_id": "R-SW",
+      "source_url": "https://ipaiban.com/idea/article/69a876a97db281f1526374c7",
+      "source_title": "《2026妇女节SVG交互图文案例合集》",
+      "source_ordinal": 3,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzAxMzQyMDI3OQ==&mid=2656034594&idx=1&sn=c173e8c4a3368d397b0bdd443edbf8c3&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "卡片随点击向两侧交替离场，最后展开。",
+      "language_aliases": [
+        "左右扔卡",
+        "交替飞走",
+        "选完展开"
+      ],
+      "pattern_ids": [
+        "P04"
+      ],
+      "adaptation_focus": "每一步方向属于状态表，不要把随机方向当成默认。",
+      "critical_distinction": "左右飞出代表选择结果，还是单纯动画顺序？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C44",
+      "brand": "Bose",
+      "title": "戴上Ultra 开放式耳机，她们各有故事",
+      "source_id": "R-SW",
+      "source_url": "https://ipaiban.com/idea/article/69a876a97db281f1526374c7",
+      "source_title": "《2026妇女节SVG交互图文案例合集》",
+      "source_ordinal": 5,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5NDI3NjA4Mw==&mid=2675137598&idx=1&sn=4989fdf526f687b061ee2302e56c13c6&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "画面分块错落切换，并结合点击与横向阅读。",
+      "language_aliases": [
+        "格子弹起来",
+        "错峰拼图",
+        "分块换画面"
+      ],
+      "pattern_ids": [
+        "P18",
+        "P02"
+      ],
+      "adaptation_focus": "区分整张图被分块与多个可单独操作的卡片。",
+      "critical_distinction": "各格按固定节奏动画，还是读者逐格点击？",
+      "evidence": "publisher_case_description",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C45",
+      "brand": "DR珠宝",
+      "title": "郑重声明：DR已正式起诉售假商家",
+      "source_id": "R-T03",
+      "source_url": "https://ipaiban.com/idea/article/6ad19e57082331dd9e104256",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzA4ODE3NjUwMg==&mid=2651420878&idx=1&sn=07b1d9a43e543ceaf10e85fc726d9bd0&click_id=1732608882&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "上层文字画面擦去后，正文自动展开。",
+      "language_aliases": [
+        "点击擦字",
+        "擦掉再展开"
+      ],
+      "pattern_ids": [
+        "P03"
+      ],
+      "adaptation_focus": "两张等大图对齐；擦除和高度展开是两个相邻阶段。",
+      "critical_distinction": "擦除由一次点击播放，还是手指经过哪里就擦哪里？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C46",
+      "brand": "LEXUS雷克萨斯认证二手车",
+      "title": "3步get爱车焕新秘诀！",
+      "source_id": "R-T03",
+      "source_url": "https://ipaiban.com/idea/article/6ad19e57082331dd9e104256",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzUzMjg3OTMxNg==&mid=2247498077&idx=1&sn=b6bc81f8e449720ef4c8bdef05d50656&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "模糊画面擦去显露清晰画面，再自动展开。",
+      "language_aliases": [
+        "擦亮照片",
+        "模糊变清楚",
+        "擦完展开"
+      ],
+      "pattern_ids": [
+        "P03"
+      ],
+      "adaptation_focus": "模糊版与清晰版必须同构图，避免被误看为物体移动。",
+      "critical_distinction": "前后画面只改变清晰度，还是也更换产品状态？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C47",
+      "brand": "Levis官方账号",
+      "title": "丹宁蓝 + _____ = 夏日多巴胺",
+      "source_id": "R-T02",
+      "source_url": "https://ipaiban.com/idea/article/6a9e3218082331dd9e867a5f",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5NDY4NDA2MA==&mid=2650025893&idx=1&sn=0737fca67062a95bf1f1d2ff3a8ed680&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "场景、弧形边框、人物切图叠置，形成曲面轮播错觉。",
+      "language_aliases": [
+        "人穿出弧面",
+        "曲面屏轮播",
+        "人物破框"
+      ],
+      "pattern_ids": [
+        "P15"
+      ],
+      "adaptation_focus": "底图与人物切图按相同画布、帧序和播放节奏配对。",
+      "critical_distinction": "人物是否越过画框边缘，还是始终被画框裁切？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C48",
+      "brand": "迈凯伦",
+      "title": "摩登锋格，城市律动",
+      "source_id": "R-T01",
+      "source_url": "https://ipaiban.com/idea/article/6aa8becb082331dd9eb7d1c1",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=Mzg5NzgzMzMwMg==&mid=2247519607&idx=1&sn=ad149d83155b278667076c79885d23b1&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "配对的上下滑动序列形成相机变焦观感。",
+      "language_aliases": [
+        "相机变焦",
+        "焦段变化",
+        "车逐步靠近"
+      ],
+      "pattern_ids": [
+        "P17"
+      ],
+      "adaptation_focus": "配对序列等尺寸等数量；主体锚点对齐并检查双层触发同步。",
+      "critical_distinction": "变焦连续跟手，还是每次滑动停在一个预设焦段？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C49",
+      "brand": "Boucheron宝诗龙",
+      "title": "宝诗龙Quatre工厂",
+      "source_id": "R-T01",
+      "source_url": "https://ipaiban.com/idea/article/6aa8becb082331dd9eb7d1c1",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MzU0MDgxOTU5Mg==&mid=2247523107&idx=1&sn=b0fc71b6d91c53b8d67b18952c7b98b5&click_id=827686864&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "配对滑动图层将产品与工序阶段关联展示。",
+      "language_aliases": [
+        "上下对位",
+        "工厂工序",
+        "联动画廊"
+      ],
+      "pattern_ids": [
+        "P17"
+      ],
+      "adaptation_focus": "将两组序列按工序编号配对，防止上下显示不同阶段。",
+      "critical_distinction": "两层需要同一手势联动，还是允许分别滑动？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    },
+    {
+      "case_id": "C50",
+      "brand": "梅赛德斯-奔驰",
+      "title": "2024北京车展亮相倒计时",
+      "source_id": "R-T04",
+      "source_url": "https://ipaiban.com/idea/article/6ad1b0a1082331dd9e129372",
+      "source_title": null,
+      "source_ordinal": null,
+      "original_url": "https://mp.weixin.qq.com/s?__biz=MjM5OTI5OTg5Mg==&mid=2650179648&idx=1&sn=2ee78191f31498cafb3afcaf8c76ba47&click_id=1855335999&scene=21#wechat_redirect",
+      "article_date": null,
+      "source_feature": "背景、透明文字与固定透视框叠合成差速轮播。",
+      "language_aliases": [
+        "空间轮播",
+        "文字比背景慢",
+        "透视框"
+      ],
+      "pattern_ids": [
+        "P16"
+      ],
+      "adaptation_focus": "前后层总周期相等，停留与切换时间分配不同；还需验证起始相位。",
+      "critical_distinction": "只是局部过渡错开，还是两层长期以不同周期独立轮播？",
+      "evidence": "publisher_detailed_tutorial",
+      "original_article_opened": false,
+      "interaction_observed": false,
+      "xiumi_full_case_tested": false
+    }
+  ]
+}

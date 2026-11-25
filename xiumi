@@ -1,0 +1,28 @@
+#!/bin/sh
+set -eu
+
+usage() {
+    printf '%s\n' '用法：./xiumi "描述想要的秀米效果"' '      ./xiumi  （进入对话模式）'
+}
+
+case "${1-}" in
+    --help|-h) usage; exit 0 ;;
+esac
+if [ "$#" -gt 1 ]; then
+    usage >&2
+    exit 2
+fi
+if ! command -v codex >/dev/null 2>&1; then
+    printf '%s\n' '请先安装并登录 Codex CLI，或在 GitHub Copilot 中选择 xiumi-layout。' >&2
+    exit 1
+fi
+
+agent_dir=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd)
+if [ "$#" -eq 0 ]; then
+    exec codex -C "$agent_dir" '请作为本项目的秀米排版助手开始对话，提示我描述画面或发参考。'
+fi
+if [ -z "$1" ]; then
+    usage >&2
+    exit 2
+fi
+printf '%s\n' "$1" | codex exec -C "$agent_dir" -s read-only -

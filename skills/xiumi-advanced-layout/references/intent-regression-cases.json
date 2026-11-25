@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-06",
+  "evaluation_status": "回归用例集；不是独立模型盲测结果，不构成测量过的识别准确率。",
+  "evaluation_rubric": [
+    "是否保留否定、对象、范围与上下文约束",
+    "是否只询问会改变路线且未知的信息",
+    "对外是否用画面和读者动作解释，而非仅列术语",
+    "有真实交付时是否给相应换图定位、动作、依赖与检查；无草稿时是否标为通用做法",
+    "是否区分来源讲解、观察、桌面实测、手机及导入验证"
+  ],
+  "cases": [
+    {
+      "id": "Q01",
+      "user_prompt": "点一下，下面正文往下让开一段。",
+      "context": null,
+      "expected_candidates": [
+        "L01"
+      ],
+      "decision_constraint": "正文高度增加，不再追问是否要推开。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "把同位换图当展开"
+    },
+    {
+      "id": "Q02",
+      "user_prompt": "点一下，下面正文别往下动，就原地露出来。",
+      "context": null,
+      "expected_candidates": [
+        "L02"
+      ],
+      "decision_constraint": "否定高度变化，固定区域显露。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "忽略“别”而选择撑高"
+    },
+    {
+      "id": "Q03",
+      "user_prompt": "照片慢慢出来。",
+      "context": null,
+      "expected_candidates": [
+        "L03",
+        "L04"
+      ],
+      "decision_constraint": "只问原位变清楚还是从旁边进来；保留机制未知。",
+      "replacement_profile": null,
+      "forbidden_result": "擅定淡入、伪造已做好的层级"
+    },
+    {
+      "id": "Q04",
+      "user_prompt": "对，就是慢慢出来。",
+      "context": "此前已确认：车从右边进来，框不动。",
+      "expected_candidates": [
+        "L04",
+        "L15"
+      ],
+      "decision_constraint": "继承右侧移入和固定框，不重复问出来的含义。",
+      "replacement_profile": "RIMG06",
+      "forbidden_result": "遗忘上下文改成淡入"
+    },
+    {
+      "id": "Q05",
+      "user_prompt": "点哪张哪张开，点过的别关。",
+      "context": null,
+      "expected_candidates": [
+        "L05"
+      ],
+      "decision_constraint": "独立保留状态；用A→B后A仍开验收。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "整排轮播或互斥"
+    },
+    {
+      "id": "Q06",
+      "user_prompt": "点哪张哪张开，不过上一个要关掉。",
+      "context": null,
+      "expected_candidates": [
+        "L06"
+      ],
+      "decision_constraint": "互斥规则优先，不能保留上一张。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "把点哪张都判成独立状态"
+    },
+    {
+      "id": "Q07",
+      "user_prompt": "卡片自己一块一块翻过去，别让我挨个点。",
+      "context": null,
+      "expected_candidates": [
+        "L07"
+      ],
+      "decision_constraint": "自动分块推进，不采用独立热点点击。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "要求逐个点击"
+    },
+    {
+      "id": "Q08",
+      "user_prompt": "不是点一下自动播完，我手停它也得停。",
+      "context": "上一版做了点击淡出。",
+      "expected_candidates": [
+        "L18"
+      ],
+      "decision_constraint": "撤销一次性触发方案，需核对连续控制；其他视觉要求保留。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "声称普通淡出就是跟手"
+    },
+    {
+      "id": "Q09",
+      "user_prompt": "我划一下就行，让它自己打开。",
+      "context": null,
+      "expected_candidates": [
+        "L19"
+      ],
+      "decision_constraint": "一次手势触发后自动播放，与Q08相反。",
+      "replacement_profile": "RIMG08",
+      "forbidden_result": "强制做自由擦除"
+    },
+    {
+      "id": "Q10",
+      "user_prompt": "光照过后亮着，别又暗了。",
+      "context": null,
+      "expected_candidates": [
+        "L17"
+      ],
+      "decision_constraint": "留存显露，不能做光移开恢复暗。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "看到光就判手电筒"
+    },
+    {
+      "id": "Q11",
+      "user_prompt": "光一移走，刚照的地方又黑。",
+      "context": null,
+      "expected_candidates": [
+        "L16"
+      ],
+      "decision_constraint": "移动光源且不保留亮区；核对专用能力。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "用一次淡出或固定洞口冒充"
+    },
+    {
+      "id": "Q12",
+      "user_prompt": "这个圆洞固定，挪里面的大图找东西。",
+      "context": null,
+      "expected_candidates": [
+        "L14"
+      ],
+      "decision_constraint": "固定视窗和移动内容；不说光圈随手指。",
+      "replacement_profile": "RIMG05",
+      "forbidden_result": "把视窗移动与光源移动混淆"
+    },
+    {
+      "id": "Q13",
+      "user_prompt": "框不要动，我说的是里面那辆车跟着手指走。",
+      "context": null,
+      "expected_candidates": [
+        "L15",
+        "L13"
+      ],
+      "decision_constraint": "修正作用对象是车；框保留。",
+      "replacement_profile": "RIMG06",
+      "forbidden_result": "整体移动或整个框换图"
+    },
+    {
+      "id": "Q14",
+      "user_prompt": "字比图慢一点，但是每轮都要配上。",
+      "context": null,
+      "expected_candidates": [
+        "L22"
+      ],
+      "decision_constraint": "配对、总周期、起点；至少核对多轮接缝。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "直接给不同周期"
+    },
+    {
+      "id": "Q15",
+      "user_prompt": "让人物伸出框外，背景接着换。",
+      "context": null,
+      "expected_candidates": [
+        "L23"
+      ],
+      "decision_constraint": "透明人物与背景配对；不是完整三维模型。",
+      "replacement_profile": "RIMG06",
+      "forbidden_result": "随便裁透明边导致错位"
+    },
+    {
+      "id": "Q16",
+      "user_prompt": "就高端一点，有电影感，静止也可以。",
+      "context": null,
+      "expected_candidates": [
+        "L36",
+        "L35"
+      ],
+      "decision_constraint": "静态风格可满足，建议留白/构图/色彩，不强加动画。",
+      "replacement_profile": "RIMG01",
+      "forbidden_result": "直接选3D轮播或自动视频"
+    },
+    {
+      "id": "Q17",
+      "user_prompt": "这张截图的排版帮我做一样。",
+      "context": "仅一张静态截图，没录屏。",
+      "expected_candidates": [
+        "L35"
+      ],
+      "decision_constraint": "分析可见布局；动画和隐藏状态未知。",
+      "replacement_profile": "RIMG01",
+      "forbidden_result": "从截图声称长按、循环已观察"
+    },
+    {
+      "id": "Q18",
+      "user_prompt": "所有兔子都找到，才能显示过关。",
+      "context": null,
+      "expected_candidates": [
+        "L20"
+      ],
+      "decision_constraint": "独立标记加全完成条件；验证全部目标。",
+      "replacement_profile": "RIMG08",
+      "forbidden_result": "任一点即过关"
+    },
+    {
+      "id": "Q19",
+      "user_prompt": "找到一个就直接显示奖励，其他不用找。",
+      "context": null,
+      "expected_candidates": [
+        "L05"
+      ],
+      "decision_constraint": "任一目标独立触发，不沿用全完成条件。",
+      "replacement_profile": "RIMG08",
+      "forbidden_result": "凭游戏外观强加收集逻辑"
+    },
+    {
+      "id": "Q20",
+      "user_prompt": "上中下分开换，拼成车以后我要存成一张图。",
+      "context": null,
+      "expected_candidates": [
+        "L26"
+      ],
+      "decision_constraint": "展示和合成导出两项分开验证，不能承诺长按任意层保存整图。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "叠层显示等于导出"
+    },
+    {
+      "id": "Q21",
+      "user_prompt": "答对加分，退出再进分数还在，还要知道谁答过。",
+      "context": null,
+      "expected_candidates": [
+        "L25"
+      ],
+      "decision_constraint": "需求包含计分、持久化、身份数据；有限分支不足，说明需额外能力。",
+      "replacement_profile": "RIMG09",
+      "forbidden_result": "把跳结果页冒充后台记录"
+    },
+    {
+      "id": "Q22",
+      "user_prompt": "先选A再选C，最后看AC那张图就行。",
+      "context": null,
+      "expected_candidates": [
+        "L25"
+      ],
+      "decision_constraint": "有限分支足够，不擅增计分或表单服务。",
+      "replacement_profile": "RIMG09",
+      "forbidden_result": "过度复杂化或多余追问后台"
+    },
+    {
+      "id": "Q23",
+      "user_prompt": "输对密码才让员工看，陌生人不能进。",
+      "context": null,
+      "expected_candidates": [
+        "L29"
+      ],
+      "decision_constraint": "身份权限是业务需求；预设点击不是安全鉴权。",
+      "replacement_profile": "RIMG09",
+      "forbidden_result": "用隐藏页承诺保密访问"
+    },
+    {
+      "id": "Q24",
+      "user_prompt": "点三个按钮像密码锁一样开门，做个故事入口。",
+      "context": null,
+      "expected_candidates": [
+        "L29"
+      ],
+      "decision_constraint": "有限顺序视觉入口，未要求真正身份鉴权。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "不必要地阻止视觉演示"
+    },
+    {
+      "id": "Q25",
+      "user_prompt": "回到开始。",
+      "context": "此前明确看完详情回到这组目录。",
+      "expected_candidates": [
+        "L33"
+      ],
+      "decision_constraint": "回组件目录，沿用上下文，不滚整篇顶。",
+      "replacement_profile": "RIMG09",
+      "forbidden_result": "忽略指代范围"
+    },
+    {
+      "id": "Q26",
+      "user_prompt": "顶部那个条始终跟着，整篇往下读也别消失。",
+      "context": null,
+      "expected_candidates": [],
+      "decision_constraint": "识别整篇吸顶，需要核对公众号原生能力；不能用框内固定等价。",
+      "replacement_profile": "RIMG05",
+      "forbidden_result": "无依据承诺原生吸顶"
+    },
+    {
+      "id": "Q27",
+      "user_prompt": "只换轮播第2张，别多加图。",
+      "context": null,
+      "expected_candidates": [
+        "L11",
+        "L12"
+      ],
+      "decision_constraint": "保持已有触发不改，选旧第2项替换，核对数量和顺序。",
+      "replacement_profile": "RIMG03",
+      "forbidden_result": "要求新建图集或改变播放方式"
+    },
+    {
+      "id": "Q28",
+      "user_prompt": "把模糊的那辆车换成新车，点清楚后也要是新车。",
+      "context": null,
+      "expected_candidates": [
+        "L02",
+        "L17"
+      ],
+      "decision_constraint": "判断模糊是效果还是独立图；独立图需前后配对，同裁切。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "只换清晰底图"
+    },
+    {
+      "id": "Q29",
+      "user_prompt": "透明人物换成这张，外面伸出的也一起换。",
+      "context": null,
+      "expected_candidates": [
+        "L23"
+      ],
+      "decision_constraint": "内外成对、完整透明画布对齐，保留框和动作。",
+      "replacement_profile": "RIMG06",
+      "forbidden_result": "自动裁到人物边界或删整个外层"
+    },
+    {
+      "id": "Q30",
+      "user_prompt": "车图换个位置，点击的地方也得跟着。",
+      "context": null,
+      "expected_candidates": [
+        "L05"
+      ],
+      "decision_constraint": "图位置变更需对齐热点；不能假定自动随动。",
+      "replacement_profile": "RIMG08",
+      "forbidden_result": "只换图不检查点击区"
+    },
+    {
+      "id": "Q31",
+      "user_prompt": "开场这段动图换成我这张照片，动画照旧。",
+      "context": null,
+      "expected_candidates": [
+        "L31"
+      ],
+      "decision_constraint": "静态照片没有动图内部动作；检查是素材内动画还是容器动画，说明需要什么素材。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "承诺静态替换保留视频内部运动"
+    },
+    {
+      "id": "Q32",
+      "user_prompt": "照片不用动，只改上面的字。",
+      "context": "截图中的标题已烘焙在图片里。",
+      "expected_candidates": [],
+      "decision_constraint": "文字是图片像素，需改源图后替换；可编辑文字不适用。",
+      "replacement_profile": "RIMG01",
+      "forbidden_result": "编造可双击图片文字修改"
+    },
+    {
+      "id": "Q33",
+      "user_prompt": "轨迹拆礼现在可以直接发公众号吧？",
+      "context": "只有桌面拖动未触发记录，无手机验证。",
+      "expected_candidates": [
+        "L19"
+      ],
+      "decision_constraint": "说明手机触摸及导入未验证，不能宣布发布就绪；提供待验动作。",
+      "replacement_profile": "RIMG08",
+      "forbidden_result": "以模板存在代替验证"
+    },
+    {
+      "id": "Q34",
+      "user_prompt": "帮我做成能编辑的秀米稿，换图步骤也给我。",
+      "context": "当前智能体无浏览器或秀米写入工具。",
+      "expected_candidates": [],
+      "decision_constraint": "交付可执行方案和通用换图步骤，明确尚未在秀米生成，不虚构链接。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "没有工具仍说已保存"
+    },
+    {
+      "id": "Q35",
+      "user_prompt": "每点一下出现一句预先写好的话就行。",
+      "context": null,
+      "expected_candidates": [
+        "L28"
+      ],
+      "decision_constraint": "预设对话，不擅自增加实时聊天服务。",
+      "replacement_profile": "RIMG09",
+      "forbidden_result": "宣称回复来自真实用户或模型"
+    },
+    {
+      "id": "Q36",
+      "user_prompt": "是线一点点画出来，不是有个点在跑。",
+      "context": null,
+      "expected_candidates": [
+        "L30"
+      ],
+      "decision_constraint": "线本体显露；不能把路径移动参数当描线能力。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "忽略否定继续做光点路径"
+    },
+    {
+      "id": "Q37",
+      "user_prompt": "图一直都在，是模糊变清楚，不是从透明变出来。",
+      "context": null,
+      "expected_candidates": [
+        "L37"
+      ],
+      "decision_constraint": "已排除透明度渐显；核对模糊效果或同构图配对。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "将“清楚”直接判成淡入"
+    },
+    {
+      "id": "Q38",
+      "user_prompt": "按住才动，松开退回原处，不能点一下播完。",
+      "context": null,
+      "expected_candidates": [
+        "L38"
+      ],
+      "decision_constraint": "长按及释放回退都明确；检查实际触摸行为。",
+      "replacement_profile": "RIMG10",
+      "forbidden_result": "点击触发动画替代按住"
+    },
+    {
+      "id": "Q39",
+      "user_prompt": "再点收回去，下面的文字也回原位。",
+      "context": null,
+      "expected_candidates": [
+        "L39"
+      ],
+      "decision_constraint": "重复开关且回收高度，验证开关再开。",
+      "replacement_profile": "RIMG02",
+      "forbidden_result": "只隐藏而留下空白"
+    },
+    {
+      "id": "Q40",
+      "user_prompt": "两张车图接起来像一张，别有白线，换车也别断开。",
+      "context": null,
+      "expected_candidates": [
+        "L40"
+      ],
+      "decision_constraint": "相邻图成组配对裁切，保留宽度间距并查接缝。",
+      "replacement_profile": "RIMG07",
+      "forbidden_result": "只换一半导致车断开"
+    }
+  ]
+}
